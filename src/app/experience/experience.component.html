@@ -1,0 +1,23 @@
+<div class="background-white intro">
+  <div id="profile" class="container intro-content">
+   <h3 style="text-align: left" class="adjust_text">Work Experience<span class="smallerHeading"> - {{experience}}</span></h3>
+   <div class="d-flex flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center form-group">
+          <!-- <label for="company" class="m-2 selectHead">Select company to view details:</label> -->
+          <select class="form-control selectStyle" id="company" (change)="showSelectedCompany($event)">
+              <option value="0">FIS / Zenmonics (Associate Technical Lead)</option>
+              <option value="1">Zenmonics (Senior Software Engineer)</option>
+              <option value="2">Wipro (Project Engineer)</option>
+              <option value="3">Wipro (Intern)</option>
+          </select>
+      </div>
+
+      <div class="detailsWrapper">
+          <app-card-icon-wrapper class="mb-3" title="Tech Stack" [iconArray]="iconArray" [isExperience]="true">
+          </app-card-icon-wrapper>
+          <app-card-wrapper class="about ml-5" id="expDetail" title="Details" [detailArray]="detailsInfo"></app-card-wrapper>
+      </div>
+  </div>
+  </div>
+ </div>
+

@@ -1,0 +1,64 @@
+
+.image-holder {
+    height: 200px;
+    overflow-y: auto;
+}
+
+
+
+.image-holder img {
+    height: 40px;
+    padding-right: 2%;
+}
+
+::-webkit-scrollbar {
+    width: 0.15em;
+    height: 0.15em;
+}
+::-webkit-scrollbar-button {
+    background:#00b386;
+}
+::-webkit-scrollbar-track-piece {
+    background: #e8ddd5;
+}
+::-webkit-scrollbar-thumb {
+    background: #00b386;
+}
+
+.card-body-height {
+    height: 200px;;
+}
+
+.card-body-height-large {
+    height: 255px;
+}
+
+.card-body {
+    min-height: 250px;
+}
+
+.card {
+    width: 18rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    margin-bottom: 45px;
+    border-radius: 0 20% 0 20%;
+    border: 3px solid #00b386;
+
+}
+
+.linkTxt {
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgText {
+    font-size: small;
+    text-align: center;
+}
+
+.imgdiv {
+    flex: 1 1 20%;
+}
+
+

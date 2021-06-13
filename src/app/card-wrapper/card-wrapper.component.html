@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-body detailContainer">
+      <h5 class="card-title text-center">{{title}}</h5>
+      <ul>
+          <li *ngFor="let detail of detailArray" [innerHtml] = "detail"></li>
+      </ul>
+    </div>
+  </div>

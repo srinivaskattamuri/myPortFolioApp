@@ -27,9 +27,23 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/bootstrap/css/bootstrap.min.css",
+              "src/assets/font-awesome/css/font-awesome.min.css",
+              "src/assets/magnific-popup/magnific-popup.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/jquery/jquery.min.js",
+              "src/assets/jquery/jquery-migrate.min.js",
+              "src/assets/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/superfish/hoverIntent.js",
+              "src/assets/superfish/superfish.min.js",
+              "src/assets/wow/wow.min.js",
+              "src/assets/owlcarousel/owl.carousel.min.js",
+              "src/assets/magnific-popup/magnific-popup.min.js",
+              "src/assets/sticky/sticky.js",
+              "src/assets/main.js"
+                  ]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,49 @@
+<div class="background-white intro">
+
+  <div id="achivements" class="container intro-content">
+<section id="portfolio" class="wow fadeInUp">
+  <div class="container">
+    <div class="section-header">
+        <p class="lead ">
+            “Whenever I think of the past, it brings back so many memories.”
+        </p>
+        <p class="paragraphFont">We don't remember days, we remember moments. These are the beautiful memories of what has happened in my experience.</p>
+    </div>
+  </div>
+
+   <div class="container-fluid">
+    <div class="row no-gutters">
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/btech.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/placements.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/WashingtonDcFamily.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/usWashingtonDC.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/sendoff.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/Lunch.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/PoojaMarriage.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/WiproPraveenBirthday.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/OnsiteOuting.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/FndParty.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/NewYearParty.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/ZenmonicsOuting.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/whiteHouse.jpeg'}"></ng-container>
+        <ng-container [ngTemplateOutlet]="gallery" [ngTemplateOutletContext] = "{image:'assets/images/MyPic.jpeg'}"></ng-container>
+    </div>
+      </div>
+</section>
+<br/>
+<br/>
+</div>
+</div>
+
+<ng-template #gallery let-image="image">
+    <div class="col-md-3">
+        <div class="portfolio-item wow fadeInUp">
+          <a href="{{image}}" class="portfolio-popup">
+            <img [src]="image" alt="">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info"><h2 class="wow fadeInUp"></h2></div>
+            </div>
+          </a>
+        </div>
+      </div>
+</ng-template>

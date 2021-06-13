@@ -1,0 +1,31 @@
+<div class="background-white intro scrollOption">
+  <div id="abilities" class="container intro-content">
+      <p class="lead ">
+          “Learning never exhausts the mind.”<br>-
+          Leonardo da Vinci
+        </p>
+        <ng-container [ngTemplateOutlet]="skillDetails" [ngTemplateOutletContext] = "{title:'Programming Language',iconArr:programmingSkills}"></ng-container>
+
+        <ng-container [ngTemplateOutlet]="skillDetails" [ngTemplateOutletContext] = "{title:'Front End Development',iconArr:frontEndDevelopment}"></ng-container>
+
+        <ng-container [ngTemplateOutlet]="skillDetails" [ngTemplateOutletContext] = "{title:' Backend | Frameworks',iconArr:backEndSkills}"></ng-container>
+
+        <ng-container [ngTemplateOutlet]="skillDetails" [ngTemplateOutletContext] = "{title:'Databases/NoSql',iconArr:databases}"></ng-container>
+
+        <ng-container [ngTemplateOutlet]="skillDetails" [ngTemplateOutletContext] = "{title:'Tools',iconArr:tools}"></ng-container>
+
+        <ng-template #skillDetails let-header="title" let-icons="iconArr">
+        <div class="card">
+            <div class="card-header">
+              {{header}}
+            </div>
+            <div class="card-body">
+              <div class="row">
+                    <div class="column row text-center" *ngFor="let icon of icons">
+                        <div class="img-right-padding"><img alt="{{icon.text}}" [src]="icon.image" class="responsive-img">{{icon.text}}</div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+          </ng-template>
+</div>
