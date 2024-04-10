@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
  age: number = 0;
  items: Observable<any>;
 
-  currentAddress: string = "Bengaluru,560048";
+  currentAddress: string = "Hyderabad,500089";
   downloadResume : String = '';
   constructor(
     public db: AngularFireDatabase
@@ -30,6 +30,7 @@ export class AboutComponent implements OnInit {
     this.age = Math.floor(differenceInMilisecond / 31536000000);
 
       this.items.subscribe((res:any) => {
+        debugger
       this.downloadResume = res;
     })
 

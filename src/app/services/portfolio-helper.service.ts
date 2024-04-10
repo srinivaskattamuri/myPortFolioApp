@@ -11,6 +11,7 @@ export class PortfolioHelperService {
     appreciations:[
       `Promoted to <b>Associate Technical Lead</b> for mentoring team in product devlopment during Q1,2020.`,
       `Travelled to U.S.A (Onshore) on <b>B1 Vissa</b> for Project Work .`,
+      `Received <b>Above and Beyond</b> in Month of July 2023 for contribution to Project .`,
       `Received Wipro's <b>Most Promising Developer</b> award for the work shown in developing Business Module during Q4,2017. `,
       `Achieved Second Prize for poster presentation on <b>Role of Smart Micro-grids for Remote Village Electrification</b> at AFOSEC-2015 hosted by Velagapudi Ramakrishna (VR) Siddhartha college of Engineering.`,
       ],
